@@ -15,7 +15,7 @@ You can now explore the dashboard **running locally** at [https://127.0.0.1:8501
 some words on how to use the dashboard
 
 
-## Resources
+## Resources provided in this repository
 
 ### Included in this repository
 * [`resources/performance`](resources/performance`) includes the configurations tested and the respective performance observations in one CSV file per system. The performance metric columns are: execution time: `time`, maximum memory footprint: `max-resident-size`, throughput (transactions per second): `throughput` 
@@ -26,7 +26,7 @@ some words on how to use the dashboard
 ##### Converting Raw Coverage Reports
 [cloud folder](https://mega.nz/folder/VUpClDiA#-pJj8fm8d_Td5udauW61aQ)
 
-### Software Systems
+### Software Systems (external)
 The resources of the six software systems used in this empirical study stem from their respective repositories and Web sites:
 * [jadx](https://github.com/skylot/jadx)
 * [batik](https://xmlgraphics.apache.org/batik/tools/rasterizer.html)
