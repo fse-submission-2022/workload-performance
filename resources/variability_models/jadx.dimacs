@@ -1,0 +1,55 @@
+c 1 escape-unicode
+c 2 no-imports 
+c 3 raw-cfg
+c 4 valid
+c 5 multi_threaded
+c 6 java
+c 7 json
+c 8 rename-flags
+c 9 respect-bytecode-access-modifier
+c 10 case
+c 11 deobf-parse-kotlin-metadata
+c 12 deobf
+c 13 Root
+c 14 no-replace-consts
+c 15 no-debug-info
+c 16 cfg
+c 17 deobf-rewrite-cfg
+c 18 threads
+c 19 output-format
+c 20 printable
+c 21 deobf-use-sourcename
+c 22 no-res
+c 23 single_threaded
+c 24 no-src
+p cnf 24 30
+13 0
+8 -10 0
+8 -4 0
+8 -20 0
+10 4 20 -8 0
+13 -18 0
+13 -2 0
+13 -15 0
+13 -14 0
+13 -1 0
+13 -9 0
+13 -12 0
+13 -8 0
+13 -16 0
+13 -3 0
+13 -22 0
+13 -24 0
+13 -19 0
+13 -17 0
+13 -21 0
+13 -11 0
+19 -13 0
+18 -23 0
+18 -5 0
+23 5 -18 0
+-23 -5 0
+19 -7 0
+19 -6 0
+7 6 -19 0
+-7 -6 0
