@@ -15,7 +15,24 @@ You can now explore the dashboard **running locally** at [https://127.0.0.1:8501
 some words on how to use the dashboard
 
 
-## Experiment Data
-### Subject Systems 
-### Configurations
-### Workloads
+## Resources
+
+### Included in this repository
+* [Performance Measurements](resources/performance) include one CSV file per Software system with one or more performance metric (see the table in the manuscript), all configuration indices refer to the sample files below (counting starts at 0)
+* [Subject System Configurations](resources/variability_models) include a CSV file for each sample (note that not all configurations let to measureable performance due to undocumented configuration constraints, thus, the number of rows exceeds the one presented in the manuscript) and an underlying DIMACS file that represents the configuration constraints obtained from the software system documentation.
+* [Subject System Code](resources/code) is a dump of the software systems source code and corresponding class files that were instrumented for coverage measurements. These are useful to inspect the covered code and generate HTML coverage reports from scratch (see below).
+
+### Not included in this repository (raw coverage reports)
+The coverage reports provided by Jacoco are in a binary format. We provide all raw measurements [here](measurements/coverage). In order to read these reports, they need to be transformed to XML/HTML reports. Due to the file size limit of GitHub (100 MB per file) and HotCRP (600 MB) we had to move some additional data to another [cloud folder](https://mega.nz/folder/VUpClDiA#-pJj8fm8d_Td5udauW61aQ). There, we provide the workload files for all software systems, except for h2. In addition, there we provide a machine-readable representation of all coverage reports in the Hierarchical Data Format (HDF). These report files can be easily used, for instance with Python's `pandas` package. Note, that the raw file size ranges from 500 MB to over 70 GB. For the latter file (jadx), we provide a ´lrzip´-compressed version. In the HDF data frames, the references to classes and workloads have been replaced by foreign keys, which can be found here.
+
+##### Converting Raw Coverage Reports
+If one wants to get a browser-readable version of a particular coverage report, one can convert the Jacoco binary format into HTML/XML using the `jacoco_cli.jar` provided [here](utility/jacoco_cli.jar). We provide all necessary class and source files in this repository, for further information on how to use this tool see the [Jacoco documentation](https://www.jacoco.org/jacoco/trunk/doc/cli.html).
+
+### Software Systems
+The resources of the six software systems used in this empirical study stem from their respective repositories and Web sites:
+* [jadx](https://github.com/skylot/jadx)
+* [batik](https://xmlgraphics.apache.org/batik/tools/rasterizer.html)
+* [dconvert](https://github.com/patrickfav/density-converter)
+* [kanzi](https://github.com/flanglet/kanzi)
+* [jump3r](https://github.com/Sciss/jump3r)
+* [h2](https://github.com/h2database/h2database)
