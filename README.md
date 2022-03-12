@@ -22,9 +22,7 @@ some words on how to use the dashboard
 * [`resources/variability_models`](resources/variability_models`) includes the constraints considered when sampling configurations. These constraint were collected from the software system's documentation and are provided as DIMACS files.
 * [`resources/code`](resources/code`) includes the code of the software sytems tested.
 * [`resources/coverage`](resources/coverage) includesall raw coverage measurements. In order to read these reports, they need to be transformed to XML/HTML reports. If one wants to get a browser-readable version of a particular coverage report, one can convert the Jacoco binary format into HTML/XML using the `jacoco_cli.jar` provided [here](resources/coverage/jacoco_cli.jar). We provide all necessary class and source files in this repository, for further information on how to use this tool see the [Jacoco documentation](https://www.jacoco.org/jacoco/trunk/doc/cli.html).
-
-##### Converting Raw Coverage Reports
-[cloud folder](https://mega.nz/folder/VUpClDiA#-pJj8fm8d_Td5udauW61aQ)
+* [`resources/workloads`](resources/workloads) provides all workloads used in the empirical study (except for h2).
 
 ### Software Systems (external)
 The resources of the six software systems used in this empirical study stem from their respective repositories and Web sites:
