@@ -15,7 +15,7 @@ You can now explore the dashboard **running locally** at [https://127.0.0.1:8501
 some words on how to use the dashboard
 
 
-## Resources provided in this repository
+## Resources
 
 ### Included in this repository
 * [`resources/performance`](resources/performance`) includes the configurations tested and the respective performance observations in one CSV file per system. The performance metric columns are: execution time: `time`, maximum memory footprint: `max-resident-size`, throughput (transactions per second): `throughput` 
