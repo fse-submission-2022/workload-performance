@@ -11,10 +11,6 @@ docker run -p 8501:8501 streamlitapp:latest
 ```
 You can now explore the dashboard **running locally** at [https://127.0.0.1:8501](https://127.0.0.1:8501).
 
-### Usage
-some words on how to use the dashboard
-
-
 ## Resources
 
 ### Included in this repository
