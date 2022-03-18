@@ -264,6 +264,3 @@ if code:
     except FileNotFoundError as e:
         t = "<div color='red'><it>Code unavailable for numeric options.</it></div>"
         st.markdown(t, unsafe_allow_html=True)
-
-    with col5:
-        pass
