@@ -22,7 +22,9 @@ You can now explore the dashboard **running locally** at [https://127.0.0.1:8501
 ### Not included in this repository
 We provide all workloads used in the empirical study (except for h2) in a separate [MEGA cloud folder](https://mega.nz/folder/VUpClDiA#-pJj8fm8d_Td5udauW61aQ). For h2, please refer to the benchmark specifications of [benchbase](https://github.com/cmu-db/benchbase).
 
-### Software Systems (external)
+### Software Systems
+h2 is an embedded database system which can be easily integrated into other applications; jump3r is a Java implementation of an MP3 codec which processes uncompressed WAV audio files. Kanzi is a command-line file compression tool akin to, e.g., GNU xz or gzip;  Apache batik is a utility to rasterize/render SVG vector graphics; dconvert is a utility to transform image files to formats and sizes frequently used in Android app development; jadx is a decompiler for DEX bytecode (bytecode for the VM used by Android) back to Java source code. 
+
 The resources of the six software systems used in this empirical study stem from their respective repositories and Web sites:
 * [jadx](https://github.com/skylot/jadx)
 * [batik](https://xmlgraphics.apache.org/batik/tools/rasterizer.html)
