@@ -19,11 +19,25 @@ You can now explore the dashboard **running locally** at [https://127.0.0.1:8501
 * [`resources/code`](resources/code`) includes the code of the software sytems tested.
 * [`resources/coverage`](resources/coverage) includesall raw coverage measurements. In order to read these reports, they need to be transformed to XML/HTML reports. If one wants to get a browser-readable version of a particular coverage report, one can convert the Jacoco binary format into HTML/XML using the `jacoco_cli.jar` provided [here](resources/coverage/jacoco_cli.jar). We provide all necessary class and source files in this repository, for further information on how to use this tool see the [Jacoco documentation](https://www.jacoco.org/jacoco/trunk/doc/cli.html).
 
-### Not included in this repository
-We provide all workloads used in the empirical study (except for h2) in a separate [MEGA cloud folder](https://mega.nz/folder/VUpClDiA#-pJj8fm8d_Td5udauW61aQ). For h2, please refer to the benchmark specifications of [benchbase](https://github.com/cmu-db/benchbase).
 
 ### Software Systems
-h2 is an embedded database system which can be easily integrated into other applications; jump3r is a Java implementation of an MP3 codec which processes uncompressed WAV audio files. Kanzi is a command-line file compression tool akin to, e.g., GNU xz or gzip;  Apache batik is a utility to rasterize/render SVG vector graphics; dconvert is a utility to transform image files to formats and sizes frequently used in Android app development; jadx is a decompiler for DEX bytecode (bytecode for the VM used by Android) back to Java source code. 
+#### h2 
+h2 is an embedded database system which can be used as a standalone database or can be easily integrated into other applications as alibrary.
+
+#### jump3r 
+jump3r is a pure Java implementation of the MP3 codec standard. The tool can be used to encode raw WAV audio into MP3 audio files. 
+
+#### kanzi 
+kanzi is a command-line file compression tool similar to, e.g., GNU xz or gzip; it supports a wide range of entropy encoders and compression algorithms.
+
+#### batik
+Apache batik is a utility to rasterize/render SVG vector graphics.
+
+#### Density Converter (dconvert)
+dconvert is a utility to transform image files to formats and sizes frequently used in Android app development, i.e., different output sizes and formats. 
+
+#### jadx
+jadx is a decompiler for DEX bytecode back to Java. DEX bytecode corresponds to the bytecode run on the Android operating system akin to ordinary JAR/Java class files.
 
 The resources of the six software systems used in this empirical study stem from their respective repositories and Web sites:
 * [jadx](https://github.com/skylot/jadx)
@@ -32,3 +46,6 @@ The resources of the six software systems used in this empirical study stem from
 * [kanzi](https://github.com/flanglet/kanzi)
 * [jump3r](https://github.com/Sciss/jump3r)
 * [h2](https://github.com/h2database/h2database)
+
+### Not included in this repository
+We provide all workloads used in the empirical study (except for h2) in a separate [MEGA cloud folder](https://mega.nz/folder/VUpClDiA#-pJj8fm8d_Td5udauW61aQ). For h2, please refer to the benchmark specifications of [benchbase](https://github.com/cmu-db/benchbase).
